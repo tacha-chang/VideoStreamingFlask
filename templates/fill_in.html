@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <section class="form-section">
+    <h1>Enter</h1>
+
+    <div class="form-wrapper">
+      <form action="{{url_for('fill_in')}}" method ="post">
+        <label for="Office">Choose a Office:</label>
+        <select name="Office" id="cars">
+          <option value="duck">duck</option>
+          <option value="banana">banana</option>
+        </select>
+        <br><br>
+        <label for="email">PHONE NUMBER:</label><br>
+        <input type="text" id="fname" name="PHONE_NUMBER" value=" "><br>
+        <label for="explain">explain:</label><br>
+        <input type="text" id="lname" name="explain" value="message"><br><br>
+        <a href="/information" ><input type="submit" class="btn-login" value="Submit"></a>
+      </form>
+    </div>
+  </section>
+  <ul class="squares">
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

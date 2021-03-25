@@ -1,0 +1,7 @@
+email : deadlineloverkmitl@gmail.com
+pass: deadlinelover
+Bday : 18/3/1999
+Gender : Rather not say
+
+admin : Admin
+password : Admin123

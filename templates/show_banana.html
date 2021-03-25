@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <section class="form-section">
+    <h1>BANANA Employee   </h1>
+
+    <div class="form-wrapper">
+      <form >
+        {%for rows in datas %}
+        <h4>{{rows.1}} {{rows.2}} {{rows.3}} {{rows.5}}</h4>
+        <!-- <h4>{{rows.2}} </h4>
+        <h4>{{rows.3}} </h4>
+        <h4>{{rows.5}} </h4> -->
+        {% endfor %}
+        <a href="/Admin"><button type="submit" class="btn-login">Officer</button></a>
+        <h1> </h1>
+        <a href="/Cardreading" ><button type="submit" class="btn-login">Guest</button></a>
+      </form>
+<!-- id first Last Phone  -->
+        <h class="btn-login" color =none >
+    </div>
+  </section>
+  <ul class="squares">
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

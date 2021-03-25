@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <section class="form-section">
+    <h1>    </h1>
+
+    <div class="form-wrapper">
+      <form>
+          {% for pic in img_profile  %}
+          <img src='/static/img/SIAM-ID/{{pic}}' style="width:70%">
+          <!--<img src="{{ user_image }}" alt="Photo_ID" style="width:100%">-->
+          {% endfor %}
+          <h3 class='center'>{{data_profile.2}}</h3>
+          <h3>{{data_profile.7}}  {{data_profile.8}}</h3>
+          <h3>access time : {{data_profile.1}}  {{data_profile.0}}</h3>
+
+          <a href="/information" ><input  class="btn-login" value="Confirm"></a>
+            <!-- <a href="/information" ><input type="submit" class="btn-login" value="Submit"></a> -->
+          <!-- <a>function -->
+
+      </form>
+
+        <h class="btn-login" color =none >
+    </div>
+  </section>
+  <ul class="squares">
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!--<div class="card">
+  <img src="{{ user_image }}" alt="Photo_ID" style="width:100%">
+  <h1>{{data_profile.2}}</h1>
+  <h1>{{data_profile.7}} {{data_profile.8}}</h1>
+  <p>access time : {{data_profile.1}}  {{data_profile.0}}</p>
+
+  <p><a href=information ><button>ยืนยันตัวถูกต้อง</button></a></p>
+</div> -->
